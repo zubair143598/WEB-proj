@@ -14,7 +14,7 @@ const ProjectDetail = ({ match, history }) => {
   const [date, setDate] = useState("");
   const [status, setStatus] = useState("");
   const [pic, setPic] = useState();
-  const [message, setMessage] = useState("");
+  // const [message, setMessage] = useState("");
 
   const noteUpdate = useSelector((state) => state.noteUpdate);
   const { loading, error } = noteUpdate;
@@ -37,16 +37,16 @@ const ProjectDetail = ({ match, history }) => {
     fetching();
   }, [match.params.id, date]);
 
-  const onSubmit = (e) => {
-    axios
-      .post("/api/chat/create", { message })
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+  // const onSubmit = (e) => {
+  //   axios
+  //     .post("/api/chat/create", { message })
+  //     .then((res) => {
+  //       console.log(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };

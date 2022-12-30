@@ -4,8 +4,8 @@ import MainScreen from "../../components/MainScreen";
 import { Link } from "react-router-dom";
 
 const UploadProject = () => {
-  const [picMessage, setPicMessage] = useState();
-  const [pic, setPic] = useState();
+  const [picMessage, setPicMessage] = useState("");
+  const [pic, setPic] = useState("");
 
   const postDetails = (pics) => {
     setPicMessage(null);
