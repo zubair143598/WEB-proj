@@ -1,0 +1,55 @@
+#aboutus {
+  width: 100%;
+  height: auto;
+}
+#ourMP {
+  padding-left: 82px;
+  padding-right: 82px;
+  font-size: 24px;
+  margin-top: 26px;
+  text-align: center;
+}
+#ourMP h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+/* #ourMI
+{
+    width: 45%;
+   
+    height: auto;
+} */
+
+/* @media screen and(max-width:500px)
+{
+     #ourMP, #ourMI 
+    {
+        width: 100%;       
+    }    
+    
+} */
+.aboutleft {
+  padding: 20px;
+  float: left;
+  width: 50%; /* The width is 20%, by default */
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.aboutright {
+  padding: 20px;
+  float: left;
+  width: 50%; /* The width is 20%, by default */
+  margin-top: 20px;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .aboutleft,
+  .aboutright {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+#image {
+  background-image: "./aboutuspic.jpg";
+}
