@@ -12,7 +12,7 @@ function CreateNote({ history }) {
   const [category, setCategory] = useState("");
   const [status, setStatus] = useState('')
   const [pic, setPic] = useState();
-  const [picMessage,setPicMessage] = useState();
+  const [picMessage,setPicMessage] = useState("");
 
   const dispatch = useDispatch();
 

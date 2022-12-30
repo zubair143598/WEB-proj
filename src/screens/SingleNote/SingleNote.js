@@ -13,7 +13,7 @@ function SingleNote({ match, history }) {
   const [content, setContent] = useState();
   const [category, setCategory] = useState();
   const [date, setDate] = useState("");
-  const [picMessage, setPicMessage] = useState("");
+  const [picMessage, setPicMessage] = useState(null);
   const [status, setStatus] = useState("");
   const [pic, setPic] = useState();
 
